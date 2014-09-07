@@ -1,0 +1,7 @@
+<h1>Playlists list</h1>
+
+<ul>
+  <% @playlists.each do |pl| %>
+    <li><%= link_to pl.name, playlist_tracks_path(pl) %></li>
+  <% end %>
+</ul>
